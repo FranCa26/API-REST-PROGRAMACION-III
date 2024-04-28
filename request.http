@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+   "nombre": "Seba",
+   "apellido": "CruzZZZZ",
+   "edad": 21,
+   "email": "sebacruz.com",
+   "dni": 45110946
+   
+}
+
+###
+GET  http://localhost:3000/api/users HTTP/1.1
+
+### 
+GET  http://localhost:3000/api/users/662b1ab32b4ed16ee1c6c640 HTTP/1.1
+
+
+### 
+PUT   http://localhost:3000/api/users/662c05171f49bdd10709fe2a HTTP/1.1
+Content-Type: application/json
+
+{
+   "nombre": "Mariooo",
+   "apellido": "Corral",
+   "edad": 29,
+   "email": "maritocorral.com"
+
+}
+
+###
+
+DELETE http://localhost:3000/api/users/662b1ab32b4ed16ee1c6c640  HTTP/1.1
