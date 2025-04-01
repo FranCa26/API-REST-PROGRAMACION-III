@@ -1,35 +1,41 @@
-###
+### Crear un Usuario
 POST http://localhost:3000/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-   "nombre": "Seba",
-   "apellido": "CruzZZZZ",
-   "edad": 21,
-   "email": "sebacruz.com",
-   "dni": 45110946
-   
+   "nombre": "Juan",
+   "apellido": "Pérez",
+   "edad": 30,
+   "email": "juanperez@example.com",
+   "dni": 12345678
 }
 
 ###
-GET  http://localhost:3000/api/users HTTP/1.1
 
-### 
-GET  http://localhost:3000/api/users/662b1ab32b4ed16ee1c6c640 HTTP/1.1
+### Obtener todos los Usuarios
+GET http://localhost:3000/api/users HTTP/1.1
 
+###
 
-### 
-PUT   http://localhost:3000/api/users/662c05171f49bdd10709fe2a HTTP/1.1
+### Obtener un Usuario por ID
+GET http://localhost:3000/api/users/662b1ab32b4ed16ee1c6c640 HTTP/1.1
+
+###
+
+### Actualizar un Usuario
+PUT http://localhost:3000/api/users/662c05171f49bdd10709fe2a HTTP/1.1
 Content-Type: application/json
 
 {
-   "nombre": "Mariooo",
-   "apellido": "Corral",
-   "edad": 29,
-   "email": "maritocorral.com"
-
+   "nombre": "Carlos",
+   "apellido": "González",
+   "edad": 35,
+   "email": "carlosg@example.com"
 }
 
 ###
 
-DELETE http://localhost:3000/api/users/662b1ab32b4ed16ee1c6c640  HTTP/1.1
+### Eliminar un Usuario
+DELETE http://localhost:3000/api/users/662b1ab32b4ed16ee1c6c640 HTTP/1.1
+
+###
